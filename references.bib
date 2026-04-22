@@ -720,6 +720,19 @@
 	pages = {1212--1219}
 }
 
+@article{Kublin2013,
+	title = {A flexible stem taper and volume prediction method based on mixed-effects B-spline regression},
+	volume = {132},
+	ISSN = {1612-4669},
+	DOI = {10.1007/s10342-013-0715-0},
+	abstractNote = {Modelling stem taper and volume is crucial in many forest management and planning systems. Taper models are used for diameter prediction at any location along the stem of a sample tree. Furthermore, taper models are flexible means to provide information on the stem volume and assortment structure of a forest stand or other management units. Usually, taper functions are mean functions of multiple linear or nonlinear regression models with diameter at breast height and tree height as predictor variables. In large-scale inventories, an upper diameter is often considered as an additional predictor variable to improve the reliability of taper and volume predictions. Most studies on stem taper focus on accurately modelling the mean function; the error structure of the regression model is neglected or treated as secondary. We present a semi-parametric linear mixed model where the population mean diameter at an arbitrary stem location is a smooth function of relative height. Observed tree-individual diameter deviations from the population mean are assumed to be realizations of a smooth Gaussian process with the covariance depending on the sampled diameter locations. In addition to the smooth random deviation from the population average, we consider independent zero mean residual errors in order to describe the deviations of the observed diameter measurements from the tree-individual smooth stem taper. The smooth model components are approximated by cubic spline functions with a B-spline basis and a small number of knots. The B-spline coefficients of the population mean function are treated as fixed effects, whereas coefficients of the smooth tree-individual deviation are modelled as random effects with zero mean and a symmetric positive definite covariance matrix. The taper of a tree is predicted using an arbitrary number of diameter and corresponding height measurements at arbitrary positions along the stem to calibrate the tree-individual random deviation from the population mean estimated by the fixed effects. This allows a flexible application of the method in practice. Volume predictions are calculated as the integral over cross-sectional areas estimated from the calibrated taper curve. Approximate estimators for the mean squared errors of volume estimates are provided. If the tree height is estimated or measured with error, we use the “law of total expectation and variance” to derive approximate diameter and volume predictions with associated confidence and prediction intervals. All methods presented in this study are implemented in the R-package TapeR.},
+	number = {5--6},
+	journal = {European Journal of Forest Research},
+	author = {Kublin, Edgar and Breidenbach, Johannes and Kändler, Gerald},
+	year = {2013},
+	pages = {983--997}
+}
+
 @article{Kunstler2021,
 	title = {Demographic performance of European tree species at their hot and cold climatic edges},
 	volume = {109},
@@ -1363,6 +1376,20 @@
 	year = {2016},
 	editor = {Vidal, Claude and Alberdi, Iciar A. and Hernández Mateo, Laura and Redmond, John J.},
 	month = dec
+}
+
+@Manual{TapeR-0.5.3,
+	title = {TapeR: Flexible tree taper curves based on Semiparametric Mixed Models},
+	author = {Edgar Kublin and Johannes Breidenbach and Christian Vonderach},
+	year = {2023},
+	note = {R package version 0.5.3},
+}
+
+@Manual{TapeS-0.14.1,
+	title = {TapeS: Tree Taper Curves and Sorting Based on 'TapeR'},
+	author = {Christian Vonderach and Edgar Kublin and Gerald Kändler},
+	year = {2025},
+	note = {R package version 0.14.1},
 }
 
 @book{Wasserman2003,
